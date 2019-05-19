@@ -115,7 +115,7 @@ function getBs (month: number) {
 		} 
 	};
 
-	//取得したデータをJsonParseしてバランスの部分だけ取得
+	//取得したデータをJsonParseしてバランスの部分だけ取得する
 	let res = UrlFetchApp.fetch(url, options).getContentText();
 	res = JSON.parse(res);
 	let resBs = res.trial_bs.balances;
